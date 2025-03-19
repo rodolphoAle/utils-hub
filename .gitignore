@@ -1,0 +1,4 @@
+# Ignorar arquivos e pastas do PyCharm/IDEA
+.idea/
+
+.env
