@@ -1,0 +1,102 @@
+/* Definição das variáveis globais para facilitar personalizações */
+:root {
+    --bg-color:#F5F5F5; /* Cor de fundo do container */
+    --img-width: 200px; /* Largura das imagens */
+    --scroll-speed:60s; /* Velocidade da rolagem */
+    --gap-between-images: 100px; /* Espaço entre as imagens */
+  }
+  
+  /* Container principal */
+  .logo-marquee-container {
+    overflow: hidden; /* Esconde o excesso de conteúdo, permitindo rolagem */
+    background-color: var(--bg-color); /* Usa a cor de fundo definida */
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 20px 0; /* Espaçamento vertical */
+    
+  }
+  
+  /* Wrapper que contém as duas cópias das logos */
+  .marquee-wrapper {
+    display: flex; /* Flexbox para alinhar as imagens horizontalmente */
+    width: max-content; /* Ajusta a largura ao conteúdo para o efeito de rolagem */
+    animation: scroll var(--scroll-speed) linear infinite; /* Animação contínua usando a variável de velocidade */
+  }
+  
+  /* Cada conjunto de logos */
+  .marquee-content {
+    display: flex; /* Flexbox para alinhar as imagens dentro do container */
+    align-items: center; /* Alinha as imagens verticalmente no centro */
+    gap: var(--gap-between-images); /* Espaço entre as imagens, usando a variável definida */
+  }
+  
+  /* Estilização das imagens */
+  .marquee-content img {
+    width: var(--img-width); /* Largura das imagens, definida pela variável */
+    height: auto; /* Mantém a proporção das imagens */
+    object-fit: contain; /* Ajusta as imagens dentro do espaço sem distorção */
+    transition: filter 0.3s ease; /* Efeito de transição no filtro das imagens */
+  }
+  
+  /* Animação contínua */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Posição inicial das imagens */
+    }
+    100% {
+      transform: translateX(-50%); /* Move as imagens para a esquerda, criando o loop infinito */
+    }
+  }
+  
+  /* Responsividade - ajustes para diferentes tamanhos de tela */
+  
+  /* Para telas grandes (>1440px) */
+  @media (max-width: 1440px) {
+    .marquee-content img {
+      width: var(--img-width); /* Mantém o tamanho da imagem */
+    }
+  }
+  
+  /* Para telas médias (<=1024px) */
+  @media (max-width: 1024px) {
+    .marquee-content {
+      gap: 150px; /* Aumenta o espaço entre as imagens */
+    }
+  
+    .marquee-content img {
+      width: 300px; /* Aumenta o tamanho das imagens */
+    }
+  }
+  
+  /* Para telas menores (<=768px) */
+  @media (max-width: 768px) {
+    .marquee-content {
+      gap: 50px; /* Diminui o espaço entre as imagens */
+    }
+  
+    .marquee-content img {
+      width: 20px; /* Reduz o tamanho das imagens */
+    }
+  }
+  
+  /* Para telas pequenas (<=480px) */
+  @media (max-width: 480px) {
+    .marquee-content {
+      gap: 30px; /* Diminui ainda mais o espaço entre as imagens */
+    }
+  
+    .marquee-content img {
+      width: 100px; /* Ajuste no tamanho das imagens */
+    }
+  }
+  
+  /* Para telas extra pequenas (<=425px) */
+  @media (max-width: 425px) {
+    .marquee-content {
+      gap: 20px; /* Menor espaço entre as imagens em telas muito pequenas */
+    }
+  
+    .marquee-content img {
+      width: 100px; /* Mantém o tamanho ajustado para telas pequenas */
+    }
+  }
+  
