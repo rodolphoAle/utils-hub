@@ -33,7 +33,7 @@ venv\Scripts\activate  # Windows
 
 3️⃣ Instale as dependências:
 ```sh
-pip install -r requirements.txt
+pip install -r open-ia-api/requirements.txt
 ```
 
 4️⃣ Configure sua chave de API da OpenAI:
