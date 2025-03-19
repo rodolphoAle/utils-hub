@@ -8,13 +8,13 @@ Cada funcionalidade está organizada em módulos, e cada módulo possui seu pró
 
 ### 📂 Módulos Disponíveis  
 
-| Módulo          | Descrição                              |
-|-----------------|----------------------------------------|
-| `Open IA API`   | Funções úteis para usar API da Open IA |
-| `date_utils`    | Manipulação e formatação de datas      |
-| `math_utils`    | Operações matemáticas avançadas        |
-| `file_utils`    | Leitura, escrita e manipulação de arquivos |
-| `network_utils` | Funções para requisições HTTP e manipulação de APIs |
+| Módulo           | Descrição                                                                              |
+|------------------|----------------------------------------------------------------------------------------|
+| `Open IA API`    | Funções úteis para usar API da Open IA                                                 |
+| `Infinite-Image` | Scroll infinito de imagens Horizontalmente.<br/> Usando apenas HTML,CSS e Java Script. |
+| `---`            | #                                                                                      |
+| `---`            | #                                                                                      |
+| `--`             | #                                                                                      |
 
 ## 🛠️ Como Usar  
 
