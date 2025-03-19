@@ -1,6 +1,6 @@
 # 🖼️ Infinite Image Scroll - Módulo de Rolagem Infinita de Imagens 🌟
 
-Bem-vindo ao Infinite Image Scroll! Este módulo faz parte do repositório Html-CSS-JS e implementa um efeito de rolagem contínua para imagens, criando um movimento visual de "loop infinito". A rolagem é suave e pode ser facilmente personalizada para atender às suas necessidades.
+Bem-vindo ao **Infinite Image Scroll!** Este módulo faz parte do repositório **Utils Hub** e implementa um efeito de rolagem contínua para imagens, criando um movimento visual de "loop infinito". A rolagem é suave e pode ser facilmente personalizada para atender às suas necessidades.
 ## 📌 Funcionalidades
 
 ✅ Rolagem contínua de imagens, criando um efeito de loop infinito.<br>
@@ -18,8 +18,8 @@ Bem-vindo ao Infinite Image Scroll! Este módulo faz parte do repositório Html-
 
 1️⃣ Clone o repositório:
 ```sh
-git clone https://github.com/seu-usuario/repositorio
-cd Html-CSS-JS/infinite-image-scroll
+git clone https://github.com/rodolphoAle/utils-hub
+cd infinite-image
 
 ```
 
@@ -37,10 +37,10 @@ Você pode adicionar novas imagens ao loop infinito inserindo tags img dentro da
 ```
 2️⃣ Alterar a velocidade da rolagem
 
-A velocidade da rolagem é controlada pela animação CSS definida na propriedade animation do .marquee-wrapper. O valor atual é 60s:
+A velocidade da rolagem é controlada pela animação CSS definida na propriedade animation do .marquee-wrapper. O valor atual é 40s:
 
-```css
-animation: scroll 60s linear infinite;
+```html
+--scroll-speed:40s;
 ```
 Responsividade:
 

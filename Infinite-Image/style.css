@@ -2,7 +2,7 @@
 :root {
     --bg-color:#F5F5F5; /* Cor de fundo do container */
     --img-width: 200px; /* Largura das imagens */
-    --scroll-speed:60s; /* Velocidade da rolagem */
+    --scroll-speed:40s; /* Velocidade da rolagem */
     --gap-between-images: 100px; /* Espaço entre as imagens */
   }
   
